@@ -1,0 +1,342 @@
+{
+  "Animations": [
+    {
+      "FrameRate": 10,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "Idle",
+      "Frames": [
+        {
+          "FilePath": "sprites/2d/platformer collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 10,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "Run",
+      "Frames": [
+        {
+          "FilePath": "sprites/2d/platformer collection/run.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/run.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/run.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/run.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/run.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/run.png",
+          "Events": [
+            "footstep"
+          ],
+          "SpriteSheetRect": {
+            "Position": "80,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.140625,0.5833333",
+      "Looping": true,
+      "Name": "Dash",
+      "Frames": [
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "96,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "128,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "160,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "192,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "224,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "256,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "288,0",
+            "Size": "32,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "320,0",
+            "Size": "32,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "Jump",
+      "Frames": [
+        {
+          "FilePath": "sprites/2d/platformer collection/jump.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/jump.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "18,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/jump.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "36,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/jump.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "54,0",
+            "Size": "18,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "Fall",
+      "Frames": [
+        {
+          "FilePath": "sprites/2d/platformer collection/fall.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/fall.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "18,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/fall.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "36,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/fall.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "54,0",
+            "Size": "18,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.5,0.5",
+      "Looping": false,
+      "Name": "Land",
+      "Frames": [
+        {
+          "FilePath": "sprites/2d/platformer collection/recoverready.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/recoverready.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "18,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/recoverready.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "36,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/recoverready.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "54,0",
+            "Size": "18,24"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/recoverready.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "72,0",
+            "Size": "18,24"
+          }
+        }
+      ],
+      "Attachments": []
+    }
+  ],
+  "__references": [],
+  "__version": 0
+}

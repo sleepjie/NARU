@@ -1,0 +1,671 @@
+{
+  "Animations": [
+    {
+      "FrameRate": 10,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "WalkDown",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/front/walk.png",
+          "Events": [
+            "footstep"
+          ],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/walk.png",
+          "Events": [
+            "footstep"
+          ],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "80,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.5,0.6666667",
+      "Looping": true,
+      "Name": "DashDown",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "20,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "40,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [
+            "DashStart"
+          ],
+          "SpriteSheetRect": {
+            "Position": "60,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "80,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "100,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "120,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "140,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "160,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [
+            "DashEnd"
+          ],
+          "SpriteSheetRect": {
+            "Position": "180,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "200,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "220,0",
+            "Size": "20,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "240,0",
+            "Size": "20,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.4761905,0.2166667",
+      "Looping": true,
+      "Name": "DashUp",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "21,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "42,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [
+            "StartDash"
+          ],
+          "SpriteSheetRect": {
+            "Position": "63,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "84,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "105,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "126,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "147,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [
+            "EndDash"
+          ],
+          "SpriteSheetRect": {
+            "Position": "168,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "189,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "210,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "231,40",
+            "Size": "21,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "252,40",
+            "Size": "21,23"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 10,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "IdleUp",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/back/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 10,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "WalkUp",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/back/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/walk.png",
+          "Events": [
+            "footstep"
+          ],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/back/walk.png",
+          "Events": [
+            "footstep"
+          ],
+          "SpriteSheetRect": {
+            "Position": "80,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 10,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "IdleDown",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/front/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/front/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 10,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "IdleSide",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/side/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/idle collection/idle.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "WalkSide",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/side/walk.png",
+          "Events": [
+            "footstep"
+          ],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "16,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/walk.png",
+          "Events": [
+            "footstep"
+          ],
+          "SpriteSheetRect": {
+            "Position": "48,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "16,24"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/walk.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "80,0",
+            "Size": "16,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.5,0.5",
+      "Looping": true,
+      "Name": "DashSide",
+      "Frames": [
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "32,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "64,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [
+            "DashStart"
+          ],
+          "SpriteSheetRect": {
+            "Position": "96,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "128,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "160,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "192,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "224,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "256,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "288,0",
+            "Size": "32,23"
+          }
+        },
+        {
+          "FilePath": "sprites/top down collection/side/dash.png",
+          "Events": [
+            "DashEnd"
+          ],
+          "SpriteSheetRect": {
+            "Position": "320,0",
+            "Size": "32,23"
+          }
+        }
+      ],
+      "Attachments": []
+    }
+  ],
+  "__references": [],
+  "__version": 0
+}

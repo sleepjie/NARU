@@ -1,0 +1,15 @@
+{
+  "Title": "Sprite Tools",
+  "Type": "library",
+  "Org": "facepunch",
+  "Ident": "spritetools",
+  "Schema": 1,
+  "IncludeSourceFiles": false,
+  "Resources": null,
+  "PackageReferences": [],
+  "EditorReferences": null,
+  "IsWhitelistDisabled": false,
+  "Metadata": {
+    "CsProjName": ""
+  }
+}
