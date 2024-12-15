@@ -110,7 +110,7 @@
       "__guid": "3ee1c9f4-07be-4e0b-8b23-67bee2d8ec8a",
       "Flags": 0,
       "Name": "Camera",
-      "Position": "0,0,469.3",
+      "Position": "0,-60.4267,469.3",
       "Rotation": "-0.5,0.5,0.5,0.5",
       "Enabled": true,
       "Components": [
@@ -193,7 +193,7 @@
       "__guid": "87c15494-43c9-48af-9e98-645f0326fa99",
       "Flags": 0,
       "Name": "Ground",
-      "Position": "42.00389,-153.1922,-2.209686",
+      "Position": "8.635841,-153.1922,-2.209686",
       "Enabled": true,
       "Components": [
         {
@@ -285,6 +285,17 @@
           "Scale": "16.79998,24.09998",
           "Static": true,
           "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "MyComponent",
+          "__guid": "36c64f63-93de-4f29-bd74-d85239dac5f8",
+          "FallMultiplier": 2.5,
+          "Gravity": 800,
+          "GroundCheckDistance": 5,
+          "JumpForce": 300,
+          "LowJumpMultiplier": 2,
+          "MaxJumpHeight": 150,
+          "Speed": 200
         }
       ]
     },
@@ -292,13 +303,14 @@
       "__guid": "a4db6cc0-ae97-4aa1-8f74-9a1ba5d075d5",
       "Flags": 0,
       "Name": "Tileset Object",
+      "Tags": "ground",
       "Enabled": true,
       "Components": [
         {
           "__type": "SpriteTools.TilesetComponent",
           "__guid": "d5230628-7ba9-4897-a756-7d76fddef23b",
           "__version": 1,
-          "ColliderWidth": 0,
+          "ColliderWidth": 5,
           "HasCollider": true,
           "IsTrigger": false,
           "Layers": [

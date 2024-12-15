@@ -111,7 +111,7 @@
     {
       "FrameRate": 15,
       "Origin": "0.140625,0.5833333",
-      "Looping": true,
+      "Looping": false,
       "Name": "Dash",
       "Frames": [
         {
@@ -196,7 +196,9 @@
         },
         {
           "FilePath": "sprites/2d/platformer collection/dash.png",
-          "Events": [],
+          "Events": [
+            "DashEnd"
+          ],
           "SpriteSheetRect": {
             "Position": "320,0",
             "Size": "32,24"
