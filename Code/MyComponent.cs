@@ -28,9 +28,22 @@ public sealed class MyComponent : Component
 	bool IsJumping = false;
 	protected override void OnFixedUpdate()
 	{
-		ApplyGravity();
-		CheckGroundStatus();
-		BuildWishVelocity();
+		if ( IsDashing )
+		{
+			DashTimer -= Time.Delta;
+
+			if ( DashTimer <= 0 )
+			{
+				EndDash();
+			}
+		}
+		else
+		{
+			ApplyGravity();
+			CheckGroundStatus();
+			BuildWishVelocity();
+		}
+
 		Move();
 	}
 
@@ -42,6 +55,7 @@ public sealed class MyComponent : Component
 
 	void BuildWishVelocity()
 	{
+		if ( IsDashing ) return;
 		var input = Input.AnalogMove;
 
 		// Horizontal movement
@@ -71,65 +85,68 @@ public sealed class MyComponent : Component
 		}
 
 		// Increase fall speed with S key
-		if ( -input.y > 0 && !IsGrounded )
+		if ( -input.y < 0 && !IsGrounded )
 		{
 			Velocity.y -= Gravity * (FallMultiplier - 1) * Time.Delta;
 		}
 		// Initiate dash with Run key
-		if ( Input.Pressed( "Run" ) && !IsDashing && Velocity.Length > 0 )
+		if (Input.Pressed("Run") && !IsDashing && IsGrounded && Velocity.Length > 0)
 		{
-			StartDash( input.Normal );
+			StartDash(input.Normal);
 		}
 	}
 
 	void ApplyGravity()
 	{
 		if ( !IsGrounded )
-			Velocity.y -= Gravity * Time.Delta;
+		{ 
+		Velocity.y -= Gravity * Time.Delta;
+		}
 	}
 
 	void StartDash( Vector2 direction )
 	{
-		IsDashing = true;
-		DashDirection = direction;
-		DashTimer = DashDuration;
-		Velocity = DashDirection * DashSpeed; // Set initial dash velocity
-		Sprite.PlayAnimation( "Dash" );
-	}
+		if ( direction.Length == 0 )
+		{
+			Log.Info( "Dash direction invalid. Cannot dash." );
+			return;
+		}
 
-	void PerformDash()
-	{
-		DashTimer -= Time.Delta;
-		if ( DashTimer >= 0 )
-		{
-			Velocity = DashDirection * DashSpeed; // Continuously apply dash velocity
-		}
-		else
-		{
-			EndDash();
-		}
+		IsDashing = true;
+
+		// Correctly map input directions to world velocity directions
+		DashDirection = new Vector2( -direction.y, direction.x ).Normal; // Map Input.y to Velocity.x and Input.x to Velocity.y
+
+		DashTimer = DashDuration;
+		Velocity = DashDirection * DashSpeed; // Set dash velocity
+		Sprite.PlayAnimation( "Dash" );
+
 	}
 
 	void EndDash()
 	{
 		IsDashing = false;
-		Velocity = Vector2.Lerp( Velocity, Vector2.Zero, 10f * Time.Delta );
-		Sprite.PlayAnimation( "Idle" );
+		Sprite.PlayAnimation( "Idle" ); // Transition to idle animation
 	}
 	void CheckGroundStatus()
 	{
 		var groundCheckDistance = Sprite.Bounds.Maxs.y + 10f;
-
 		var start = WorldPosition + new Vector3( Vector2.Up );
 		var end = start + new Vector3( Vector2.Down ) * groundCheckDistance;
 
 		var trace = Scene.Trace.Ray( start, end ).WithTag( "Ground" ).Run();
+		bool wasGroundedBeforeCheck = IsGrounded; // Keep track of previous grounded state
 		IsGrounded = trace.Hit;
+
 		if ( IsGrounded )
 		{
 			WorldPosition = WorldPosition.WithY( trace.HitPosition.y + Sprite.Bounds.Size.y / 2f + 4f );
 			Velocity.y = 0;
-			Log.Info( "Landing!" );
+			if ( !wasGroundedBeforeCheck )
+			{
+				Log.Info( "Landing!" );
+				Sprite.PlayAnimation( "Land" ); // Play landing animation when transitioning to grounded
+			}
 		}
 	}
 
@@ -154,9 +171,10 @@ public sealed class MyComponent : Component
 
 	void UpdateAnimations()
 	{
-		if ( IsDashing  )
+		if ( IsDashing && IsGrounded)
 		{
 			Sprite.PlayAnimation( "Dash" );
+			Sprite.SpriteFlags = DashDirection.x < 0 ? SpriteFlags.HorizontalFlip : SpriteFlags.None;
 		}
 		else if ( !WasGrounded && IsGrounded )
 		{
@@ -165,7 +183,6 @@ public sealed class MyComponent : Component
 		else if ( Velocity.x != 0 && IsGrounded )
 		{
 			Sprite.PlayAnimation( "Run" );
-			Sprite.PlaybackSpeed = Velocity.x / Speed;
 			Sprite.SpriteFlags = Velocity.x < 0 ? SpriteFlags.HorizontalFlip : SpriteFlags.None;
 		}
 		else if ( IsGrounded && Velocity.y > 0 )
@@ -189,7 +206,6 @@ public sealed class MyComponent : Component
 		if ( name == "DashEnd" )
 		{
 			Sprite.PlayAnimation( "Idle" );
-			IsDashing = false; // Reset dash state
 		}
 	}
 }

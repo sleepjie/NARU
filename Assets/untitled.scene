@@ -235,7 +235,7 @@
       "__guid": "ba50e056-eeb0-47e9-a1e9-b6cedd7b37a3",
       "Flags": 0,
       "Name": "naru",
-      "Position": "0,-19.87874,213.7649",
+      "Position": "0,-19.69231,213.7649",
       "Enabled": true,
       "Components": [
         {
@@ -249,9 +249,11 @@
           "CastShadows": "On",
           "CreateAttachPoints": false,
           "FlashTint": "1,1,1,0",
+          "OnAnimationComplete": null,
+          "OnBroadcastEvent": null,
           "PlaybackSpeed": 1,
           "Sprite": "sprites/2d/platformer collection/naru.sprite",
-          "SpriteFlags": "None",
+          "SpriteFlags": "HorizontalFlip",
           "StartingAnimationName": "Idle",
           "Tint": "1,1,1,1",
           "UpDirection": "YPositive",
@@ -270,8 +272,8 @@
         {
           "__type": "MyComponent",
           "__guid": "36c64f63-93de-4f29-bd74-d85239dac5f8",
-          "DashDuration": 0.4,
-          "DashSpeed": 300,
+          "DashDuration": 0.6,
+          "DashSpeed": 250,
           "FallMultiplier": 1,
           "Gravity": 600,
           "GroundCheckDistance": 5,

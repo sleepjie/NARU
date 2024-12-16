@@ -109,7 +109,7 @@
       "Attachments": []
     },
     {
-      "FrameRate": 15,
+      "FrameRate": 20,
       "Origin": "0.140625,0.5833333",
       "Looping": false,
       "Name": "Dash",
@@ -180,7 +180,9 @@
         },
         {
           "FilePath": "sprites/2d/platformer collection/dash.png",
-          "Events": [],
+          "Events": [
+            "DashEnd"
+          ],
           "SpriteSheetRect": {
             "Position": "256,0",
             "Size": "32,24"
@@ -333,6 +335,135 @@
           "SpriteSheetRect": {
             "Position": "72,0",
             "Size": "18,24"
+          }
+        }
+      ],
+      "Attachments": []
+    },
+    {
+      "FrameRate": 15,
+      "Origin": "0.1632653,0.6666667",
+      "Looping": true,
+      "Name": "Attack1",
+      "Frames": [
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "0,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "49,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "98,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "147,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "196,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "245,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "294,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "343,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "392,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "441,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "490,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "539,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "588,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "637,0",
+            "Size": "49,27"
+          }
+        },
+        {
+          "FilePath": "sprites/2d/platformer collection/melee attack/attack 1.png",
+          "Events": [],
+          "SpriteSheetRect": {
+            "Position": "686,0",
+            "Size": "49,27"
           }
         }
       ],
